@@ -16,6 +16,10 @@ nav {
     border-radius: 20px;
 }
 
+a:hover {
+    text-decoration: none;
+}
+
 #sectionRequest {
     padding-top: 15%;
     margin-bottom: 100px;
@@ -23,6 +27,18 @@ nav {
 
 #section1 {
     background-image: url('../img/fondoEnglish.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 800px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+#section1Spanish{
+    background-image: url('../img/fondoSpanish.svg');
     background-size: cover;
     background-repeat: no-repeat;
     height: 800px;
@@ -118,9 +134,15 @@ nav {
     padding: 0% 15%;
 }
 
+#section1Spanish > div > h1 {
+    padding: 0% 15%;
+}
+
 .imgSlides {
     width: 300px;
+    height: 300px;
     margin: 30px auto;
+    border-radius: 50%;
 
 }
 
