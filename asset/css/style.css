@@ -1,0 +1,163 @@
+.colorBTNActive {
+    background-color: #FCB512;
+    display: inline-block;
+}
+
+.colorBTNActive:hover {
+    background-color: #4C4E56;
+}
+
+header {
+    margin: 10px;
+    width: -moz-available;
+    z-index: 1000;
+}
+nav {
+    border-radius: 20px;
+}
+
+#sectionRequest {
+    padding-top: 15%;
+    margin-bottom: 100px;
+}
+
+#section1 {
+    background-image: url('../img/fondoEnglish.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 800px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+#section2 {
+    margin: 100px 0px;
+    
+}
+
+.formRequest {
+    padding: 0 300px;
+}
+
+
+.verticalCenter{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    
+}
+
+.imgFooter { 
+    width: 200px;
+    margin: auto;
+}
+
+.sectionButton{
+    width: max-content;
+    
+}
+
+#section3 {
+    background-color: #FEF5E5;
+    padding: 100px 0px;
+}
+
+#section4 {
+    background-color: #3DC8FB;
+    padding: 30px 0px;
+}
+
+#section5 {
+    padding: 100px 0px;
+}
+
+#section6 {
+    background-color: #F5F5F5;
+    padding: 100px 0px;
+}
+
+#section7 {
+    background-color: #FCB512;
+    padding: 50px 0px;
+}
+
+#animacion {
+    background-image: url('../img/animacion.gif');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 413px;
+    
+}
+
+#fondo1Seccion3 {
+    background-image: url('../img/fondo1Seccion3.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 413px;
+}
+
+#fondo2Seccion3 {
+    background-image: url('../img/fondo2Seccion3.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 413px;
+}
+
+#fondo3Seccion3 {
+    background-image: url('../img/fondo3Seccion3.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 413px;
+}
+
+#section1 > div > h1 {
+    padding: 0% 15%;
+}
+
+.imgSlides {
+    width: 300px;
+    margin: 30px auto;
+
+}
+
+
+.iconSocial:hover {
+    color: #ffffff;
+}
+
+.carousel-indicators > li {
+    background: #96DFFB;
+    border-radius: 50%;
+    position: relative;
+    top: 50px;
+    width: 20px;
+    margin: 0px 10px;
+      
+}
+
+.carousel-indicators > .active{
+    background: #037DF2
+}
+  
+.labelTextFormRequest {
+    color: #FCB512;
+}
+
+.fa-chevron-down {
+    color: #FCB512;
+    float: right;
+    margin-right: 20px;
+    margin-top: -34px;
+}
+
+
+.selectIcon {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+}
