@@ -1,2 +1,2 @@
-# bylingual
+# byLingual
 Lading Page Alpha Technologies
