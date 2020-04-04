@@ -4,7 +4,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,200&display=swap');
 
-
 a:hover {
     text-decoration: none;
 }
@@ -154,7 +153,6 @@ nav {
     background-size: contain;
     background-repeat: no-repeat;
     height: 413px;
-    
 }
 
 #fondo1Seccion3 {
@@ -236,7 +234,8 @@ nav {
 }
 
 
-@media (max-width: 960px ) { 
+@media (max-width: 960px ) {
+
     .separador {
         display: none;
     }
@@ -249,7 +248,6 @@ nav {
         text-align: center;
     }
     
-
     .imgSlides {
         width: 200px;
         height: 200px;
@@ -326,7 +324,6 @@ nav {
     #fondo3Seccion3 {
         height: 240px;
     }
-
     
 }
 
