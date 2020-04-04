@@ -1,2 +1,2 @@
 # byLingual
-Lading Page Alpha Technologies
+Lading Page Beereaders
