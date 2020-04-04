@@ -1,76 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>By Lingual</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet" >
-    <link rel="stylesheet" href="./asset/css/style.css">
-</head>
-<body>
-    <header class="position-fixed">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light py-3 px-5">
-            <a class="navbar-brand" href="index.html"><img width="200px" src="./asset/img/logo.svg" alt="logoPrincipal"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#">Resources<span class="sr-only">(current)</span></a>
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>By Lingual</title>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet" >
+      <link rel="stylesheet" href="./asset/css/style.css">
+  </head>
+  <body>
+    <header class="fixed-top">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light py-3 px-sm-5 px-xs-2 text-center">
+          <a class="navbar-brand" href="index.html"><img width="150px" src="./asset/img/logo.svg" alt="logoPrincipal"></a>
+           <i class="navbar-toggler fas fa-align-right border-0" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"></i>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto mb-2">
+              <li class="nav-item active mx-2 my-1">
+                <a class="text-secondary sourceSansPro" href="#">Resources<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item active mx-2 my-1">
+                  <a class="text-secondary sourceSansPro" href="#">Contact<span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Contact<span class="sr-only">(current)</span></a>
-                  </li>
-                  <li class="nav-item active">
-                    <a class="nav-link" href="#">Blog<span class="sr-only">(current)</span></a>
-                  </li>
+                <li class="nav-item active mx-2 my-1">
+                  <a class="text-secondary sourceSansPro" href="#">Blog<span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+            <div class="my-0 my-lg-0">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item verticalCenter ml-2 my-1">
+                  <a class="btnIngreso ubuntu mr-2" href="#">SINGUP<span class="sr-only">(current)</span></a>
+                </li>
+
+                <li class="separador"></li>
+
+                <li class="nav-item verticalCenter ml-2 my-1">
+                    <a class="btnIngreso ubuntu mr-2" href="#">LOGIN<span class="sr-only">(current)</span></a>
+                </li>
+
+                <li class="separador"></li>
+
+                <li class="nav-item verticalCenter ml-2 my-1">
+                  <a class="ubuntu btnIngreso" href="requestSpanish.html">SPANISH<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item verticalCenter ml-2 my-2">
+                  <button class="btn colorBTNActive rounded-pill px-4 py-2 sectionButton m-auto" type="submit"><a class="text-white ubuntu" href="request.html">REQUEST A DEMO</a></button>
+                </li>
               </ul>
-              <div class="my-2 my-lg-0">
-                <a class="text-dark text-decoration-none  border-right border-dark p-2" href="">SINGUP</a>
-                <a class="text-dark text-decoration-none  border-right border-dark p-2" href="">LOGIN</a>
-                <a class="text-dark text-decoration-none" href="requestSpanish.html">SPANISH</a>
-                <button class="btn my-2 ml-3  my-sm-0 colorBTNActive text-white rounded-pill px-4 py-2" type="submit">REQUEST A DEMO</button>
+              <div class="container-fluid termPrivacityMenuMobil">
+                <div class="col-6"><a class="text-secondary sourceSansPro" href="">Privacy Policy<span class="sr-only">(current)</span></a></div>
+                <div class="col-6"><a class="text-secondary sourceSansPro" href="">Terms of use<span class="sr-only">(current)</span></a></div>
               </div>
             </div>
-        </nav>
-    </header>
+          </div>
+      </nav>
+  </header>
     <div id="sectionRequest">
       <div class="container">
         <div class="formRequest">
-          <h1>
-            Still not convinced?
+          <h1 class="barlowCondensed">
+            Request a Demo
           </h1>
-          <p class="text-dark">
+          <p class="text-dark sourceSansPro">
             Schedule a call with one of our experts to learn more about how ByLingual helped thousands of K-12 Spanish-speaking students to read more and better. 
           </p>
         </div>
         <form class="formRequest" action="" method="post">
           <div class="form-group">
-            <label class="labelTextFormRequest" for="email">EMAIL</label>
-            <input type="text" class="form-control shadow p-3 mb-2 bg-white rounded-pill" id="email" placeholder="TEXT">
+            <label class="labelTextFormRequest sourceSansPro" for="email">EMAIL</label>
+            <input type="text" class="form-control sourceSansPro shadow p-3 mb-2 bg-white rounded-pill" id="email" placeholder="TEXT">
           </div>
           <div class="form-group">
-            <label class="labelTextFormRequest" for="name">NAME</label>
-            <input type="text" class="form-control shadow p-3 mb-2 bg-white rounded-pill" id="name" placeholder="TEXT">
+            <label class="labelTextFormRequest sourceSansPro" for="name">NAME</label>
+            <input type="text" class="form-control sourceSansPro shadow p-3 mb-2 bg-white rounded-pill" id="name" placeholder="TEXT">
           </div>
           <div class="form-group">
-            <label class="labelTextFormRequest" for="phone">PHONE NUMBER</label>
-            <input type="text" class="form-control shadow p-3 mb-2 bg-white rounded-pill" id="phone" placeholder="TEXT">
+            <label class="labelTextFormRequest sourceSansPro" for="phone">PHONE NUMBER</label>
+            <input type="text" class="form-control sourceSansPro shadow p-3 mb-2 bg-white rounded-pill" id="phone" placeholder="TEXT">
           </div>
           <div class="form-group">
-            <label class="labelTextFormRequest" for="city">CITY</label>
-            <input type="text" class="form-control shadow p-3 mb-2 bg-white rounded-pill" id="city" placeholder="TEXT">
+            <label class="labelTextFormRequest sourceSansPro" for="city">CITY</label>
+            <input type="text" class="form-control sourceSansPro shadow p-3 mb-2 bg-white rounded-pill" id="city" placeholder="TEXT">
           </div>
           <div class="form-group">
-            <label class="labelTextFormRequest" for="country">COUNTRY</label>
-            <input type="text" class="form-control shadow p-3 mb-2 bg-white rounded-pill" id="country" placeholder="TEXT">
+            <label class="labelTextFormRequest sourceSansPro" for="country">COUNTRY</label>
+            <input type="text" class="form-control sourceSansPro shadow p-3 mb-2 bg-white rounded-pill" id="country" placeholder="TEXT">
           </div>
           <div class="form-group">
-            <label class="labelTextFormRequest" for="education">HOW ARE CONNECTED TO EDUCATION?</label>
-            <select  class="form-control shadow mb-2 bg-white rounded-pill selectIcon" id="education">
-              <option selected value="1">SELECT</option>
+            <label class="labelTextFormRequest sourceSansPro" for="education">HOW ARE CONNECTED TO EDUCATION?</label>
+            <select  class="form-control sourceSansPro shadow mb-2 bg-white rounded-pill selectIcon" id="education">
+              <option selected disabled value="0">SELECT</option>
+              <option value="1">Parent</option>
+              <option value="2">District Superintendent, Deputy/Assitant Superintendent</option>
+              <option value="3">District Leadership - Technology</option>
+              <option value="4">District Leadership - Curriculum and Instruction, Assessment, PD</option>
+              <option value="5">District Leadership - Business, Communications, Human Resources</option>
+              <option value="6">District Personel - Other (Admin., Specialist, etc.)</option>
+              <option value="7">School-based Leadership (Principal, Assistant Principal)</option>
+              <option value="8">Teacher-Early Childhood/Elementary</option>
+              <option value="9">Teacher-Middle School</option>
+              <option value="10">Teacher-Hight School</option>
+              <option value="11">School-based Technology Coordinator</option>
             </select>
             <i class="fas fa-chevron-down"></i>
           </div>
@@ -81,47 +110,47 @@
     <div id="section7">
       <div class="container">
           <div class="row mb-4">
-                <div class="col-2"></div>
+                <div class="col-md-2"></div>
                 <div class="col text-center">
-                  <a class="text-dark text-decoration-none" href="#">Contact<span class="sr-only">(current)</span></a>
+                  <a class="text-dark text-decoration-none sourceSansPro" href="#">Contact<span class="sr-only">(current)</span></a>
                 </div>
                 <div class="col text-center">
-                  <a class="text-dark text-decoration-none" href="#">Blog<span class="sr-only">(current)</span></a>
+                  <a class="text-dark text-decoration-none sourceSansPro" href="#">Blog<span class="sr-only">(current)</span></a>
                 </div>
                 <div class="col text-center">
-                  <a class="text-dark text-decoration-none" href="#">Resources<span class="sr-only">(current)</span></a>
+                  <a class="text-dark text-decoration-none sourceSansPro" href="#">Resources<span class="sr-only">(current)</span></a>
                 </div>
                 <div class="col text-center">
-                  <a class="text-dark text-decoration-none" href="#">Privacy Policy<span class="sr-only">(current)</span></a>
+                  <a class="text-dark text-decoration-none sourceSansPro" href="#">Privacy Policy<span class="sr-only">(current)</span></a>
                 </div>
                 <div class="col text-center">
-                  <a class="text-dark text-decoration-none" href="#">Terms of use<span class="sr-only">(current)</span></a>
+                  <a class="text-dark text-decoration-none sourceSansPro" href="#">Terms of use<span class="sr-only">(current)</span></a>
                 </div>
-                <div class="col-2"></div>
+                <div class="col-md-2"></div>
           </div>
           <div class="row mb-4">
-             <div class="col-4"></div>
-             <div class="col text-center"><a class="text-dark" href="#"><i class="fab fa-facebook-f fa-2x iconSocial"></i></a></div>
-             <div class="col text-center"><a class="text-dark" href="#"><i class="fab fa-twitter fa-2x iconSocial"></i></a></div>
-             <div class="col text-center"><a class="text-dark" href="#"><i class="fab fa-instagram fa-2x iconSocial"></i></a></div>
-             <div class="col text-center"><a class="text-dark" href="#"><i class="fab fa-linkedin-in fa-2x iconSocial"></i></a></div>
-             <div class="col-4"></div>
+            <div class="col-md-4"></div>
+            <div class="col text-center"><a class="text-dark" href="#"><i class="fab fa-facebook-f fa-2x iconSocial"></i></a></div>
+            <div class="col text-center"><a class="text-dark" href="#"><i class="fab fa-twitter fa-2x iconSocial"></i></a></div>
+            <div class="col text-center"><a class="text-dark" href="#"><i class="fab fa-instagram fa-2x iconSocial"></i></a></div>
+            <div class="col text-center"><a class="text-dark" href="#"><i class="fab fa-linkedin-in fa-2x iconSocial"></i></a></div>
+            <div class="col-md-4"></div>
           </div>
           <div class="row">
-             <p class="text-dark text-center">
+            <p class="text-dark text-center sourceSansPro m-auto">
                 Bee Cave Road, Suite 200, Austin, T. - 78746 - USA | Armatambo 220, La molina, Lima | Perú | Morandé 835, Santiago, Región Metropolitana - Chile
-             </p>
+            </p>
           </div>
       </div>
     </div>
     <footer class="my-4">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-3 verticalCenter">
+          <div class="col-sm-4 col-md-3 verticalCenter">
             <img class="imgFooter" src="./asset/img/logo.svg">
           </div>
           <div class="col"></div>
-          <div class="col-3 verticalCenter">
+          <div class="col-sm-4 col-md-3 verticalCenter">
             <img class="imgFooter" src="./asset/img/logoFooter.svg">
           </div>
         </div>

@@ -1,57 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>By Lingual</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet" >
-    <link rel="stylesheet" href="./asset/css/style.css">
-</head>
-<body>
-    <header class="position-fixed">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light py-3 px-5">
-            <a class="navbar-brand" href="indexSpanish.html"><img width="200px" src="./asset/img/logo.svg" alt="logoPrincipal"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#">Recursos<span class="sr-only">(current)</span></a>
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>By Lingual</title>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet" >
+      <link rel="stylesheet" href="./asset/css/style.css">
+  </head>
+  <body>
+    <header class="fixed-top">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light py-3 px-sm-5 px-xs-2 text-center">
+          <a class="navbar-brand" href="indexSpanish.html"><img width="150px" src="./asset/img/logo.svg" alt="logoPrincipal"></a>
+           <i class="navbar-toggler fas fa-align-right border-0" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"></i>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto mb-2">
+              <li class="nav-item active mx-2 my-1">
+                <a class="text-secondary sourceSansPro" href="#">Recursos<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item active mx-2 my-1">
+                  <a class="text-secondary sourceSansPro" href="#">Contactos<span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Contacto<span class="sr-only">(current)</span></a>
-                  </li>
-                  <li class="nav-item active">
-                    <a class="nav-link" href="#">Blog<span class="sr-only">(current)</span></a>
-                  </li>
+                <li class="nav-item active mx-2 my-1">
+                  <a class="text-secondary sourceSansPro" href="#">Blog<span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+            <div class="my-0 my-lg-0">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item verticalCenter ml-2 my-1">
+                  <a class="btnIngreso ubuntu mr-2" href="#">REGISTRO<span class="sr-only">(current)</span></a>
+                </li>
+
+                <li class="separador"></li>
+
+                <li class="nav-item verticalCenter ml-2 my-1">
+                    <a class="btnIngreso ubuntu mr-2" href="#">INICIAR SESIÓN<span class="sr-only">(current)</span></a>
+                </li>
+
+                <li class="separador"></li>
+
+                <li class="nav-item verticalCenter ml-2 my-1">
+                  <a class="ubuntu btnIngreso" href="index.html">INGLES<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item verticalCenter ml-2 my-2">
+                  <button class="btn colorBTNActive rounded-pill px-4 py-2 sectionButton m-auto" type="submit"><a class="text-white ubuntu" href="request.html">PEDIR UN DEMO</a></button>
+                </li>
               </ul>
-              <div class="my-2 my-lg-0">
-                <a class="text-dark text-decoration-none  border-right border-dark p-2" href="">REGISTRO</a>
-                <a class="text-dark text-decoration-none  border-right border-dark p-2" href="">INICIAR SESIÓN</a>
-                <a class="text-dark text-decoration-none" href="index.html">INGLES</a>
-                <button class="btn my-2 ml-3 my-sm-0 colorBTNActive text-white rounded-pill px-4 py-2" type="submit"><a class="text-white" href="requestSpanish.html">PIDE UN DEMO</a></button>
+              <div class="container-fluid termPrivacityMenuMobil">
+                <div class="col-6"><a class="text-secondary sourceSansPro" href="">Politicas de privacidad<span class="sr-only">(current)</span></a></div>
+                <div class="col-6"><a class="text-secondary sourceSansPro" href="">Terminos de uso<span class="sr-only">(current)</span></a></div>
               </div>
             </div>
-        </nav>
-    </header>
-    <div id="section1Spanish">
+          </div>
+      </nav>
+  </header>
+    <div id="section1Spanish" class="verticalCenter">
         <div class="container">
-            <h1 class="text-white">
+            <h1 class="text-white ubuntu">
                 Amplia el futuro de tus estudiantes <br /> Mejora su comprensión lectora
             </h1>
-            <button class="btn my-5 colorBTNActive text-white rounded-pill px-4 py-2" type="submit"><a class="text-white" href="requestSpanish.html">PIDE UN DEMO</a></button>
+            <button class="btn my-5 colorBTNActive text-white rounded-pill px-4 py-2" type="submit"><a class="text-white ubuntu" href="requestSpanish.html">PIDE UN DEMO</a></button>
         </div>
     </div>
     <div id="section2">
         <div class="container">
             <div class="row">
                 <div class="col-sm-6 verticalCenter">
-                    <h2>
+                    <h1 class="barlowCondensed">
                         BeeReaders fortalece las capacidades de comprensión lectora de tus estudiantes
-                    </h2>
-                    <p class="text-dark">
+                    </h1>
+                    <p class="text-dark sourceSansPro">
                         Nuesta plataforma de lectura digital ha demostrado ser capaz de ayudar a que estudiantes de habla hispana de 6 a 18 años de edad lean más y mejor.
                     </p>
                     <button class="btn my-4 colorBTNActive text-white rounded-pill px-4 py-2 sectionButton" type="submit"><a class="text-white" href="requestSpanish.html">PIDE UN DEMO</a></button>
@@ -66,20 +84,20 @@
                 <div id="fondo1Seccion3" class="col-sm-6">
                 </div>
                 <div class="col-sm-6 verticalCenter">
-                    <h2>
+                    <h1 class="barlowCondensed">
                         Diseñado por expertos en comprensión lectora
-                    </h2>
-                    <p class="text-dark">
+                    </h1>
+                    <p class="text-dark sourceSansPro">
                         BeeReaders trabaja alineado a estándares locales e internacionales procurando que cada estudiante lea más y mejor.
                     </p>
                 </div>
             </div>
             <div class="row">
                 <div class="col-sm-6 verticalCenter">
-                    <h2>
+                    <h1 class="barlowCondensed textRight">
                         Contenidos y metodologías que fomentan la motivacion
-                    </h2>
-                    <p class="text-dark">
+                    </h1>
+                    <p class="text-dark sourceSansPro textRight">
                         BeeReaders brinda una experiencia de evaluación personalizada en un ambiente lúcido y divertido.
                     </p>
                 </div>
@@ -90,9 +108,9 @@
                 <div id="fondo3Seccion3" class="col-sm-6">
                 </div>
                 <div class="col-sm-6 verticalCenter">
-                    <h2>
+                    <h1 class="barlowCondensed">
                         Información y analisis personalizado
-                    </h2>
+                    </h1>
                     <p class="text-dark">
                         Conoce qué estudiantes están leyendo, cuánto están leyendo, cúales son sus fortalezas y dónde pueden mejorar de forma individualizada.
                     </p>
@@ -104,18 +122,18 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col">
-                    <div class="col-12 text-white">Estudiantes han usado BeeReaders</div>
+                    <div class="col-12 text-white barlowCondensedLight">Estudiantes han usado BeeReaders</div>
                     <div class="col-12 text-white">
-                        <h2 class="display-3">
+                        <h2 class="display1 barlowCondensed text-white">
                             235,000+
                         </h2>
                     </div>
                 </div>
                 <div class="col-lg"></div>
                 <div class="col">
-                    <div class="col-12 text-white text-right">Horas dedicadas a leer</div>
+                    <div class="col-12 text-white textRight barlowCondensedLight">Horas dedicadas a leer</div>
                     <div class="col-12 text-white">
-                        <h2 class="display-3 text-right">
+                        <h2 class="display1 barlowCondensed textRight text-white">
                             1,000,000+
                         </h2>
                     </div>
@@ -130,9 +148,9 @@
             <div class="container">
               <div class="row">
                 <div class="col-12">
-                  <h2 class="text-center">"Me gusta ganar premios. Siento que leer con BeeReaders es divertido y motivador. Me está ayudando a mejorar mis calificaciones"</h2>
-                  <img class="d-block imgSlides" src="./asset/img/slides1.svg" alt="1 slide">
-                  <p class="text-dark text-center">Antonia, 5to grado, <br /> Innova Schools, Lima, Peru</p>
+                  <h2 class="text-center barlowCondensed">“Esta plataforma ayuda a los estudiantes a desarrollar el gusto por la lectura.Beereaders abre las puertas del mundo a través de la lectura en español.”</h2>
+                  <img class="d-block imgSlides" src="./asset/img/slides1.jpg" alt="1 slide">
+                  <p class="text-dark text-center sourceSansPro">Jaime Barraza Ex-Director de Bilingüismo Distinctive Schools Network <br /> Chicago, EEUU</p>
                 </div>
               </div>
             </div>
@@ -141,9 +159,9 @@
             <div class="container">
               <div class="row">
                 <div class="col-12">
-                  <h2 class="text-center">"Me gusta ganar premios. Siento que leer con BeeReaders es divertido y motivador. Me está ayudando a mejorar mis calificaciones"</h2>
+                  <h2 class="text-center barlowCondensed">"Me gusta ganar premios. Siento que leer con BeeReaders es divertido y motivador. Me está ayudando a mejorar mis calificaciones"</h2>
                   <img class="d-block imgSlides" src="./asset/img/slides2.svg" alt="2 slide">
-                  <p class="text-dark text-center">Antonia, 5to grado, <br /> Innova Schools, Lima, Peru</p>
+                  <p class="text-dark text-center sourceSansPro">Antonia, 5to grado, Innova Schools <br /> Lima, Perú</p>
                 </div>
               </div>
             </div>
@@ -152,20 +170,9 @@
             <div class="container">
               <div class="row">
                 <div class="col-12">
-                  <h2 class="text-center">"Me gusta ganar premios. Siento que leer con BeeReaders es divertido y motivador. Me está ayudando a mejorar mis calificaciones"</h2>
+                  <h2 class="text-center barlowCondensed">"“En mi rol de directora de escuela he visto cómo Beereaders ayuda a los estudiantes a involucrarse más con la lectura. Tanto el contenido entretenido como su metodología interactiva contribuyen a mejorar el desempeño de los estudiantes.”</h2>
                   <img class="d-block imgSlides" src="./asset/img/slides3.jpg" alt="3 slide">
-                  <p class="text-dark text-center">Antonia, 5to grado, <br /> Innova Schools, Lima, Peru</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="container">
-              <div class="row">
-                <div class="col-12">
-                  <h2 class="text-center">"Me gusta ganar premios. Siento que leer con BeeReaders es divertido y motivador. Me está ayudando a mejorar mis calificaciones"</h2>
-                  <img class="d-block imgSlides" src="./asset/img/slides4.jpg" alt="4 slide">
-                  <p class="text-dark text-center">Antonia, 5to grado, <br /> Innova Schools, Lima, Peru</p>
+                  <p class="text-dark text-center sourceSansPro">Liliana Vilchez Directora Liceo San Juan <br /> Lima, Perú</p>
                 </div>
               </div>
             </div>
@@ -175,7 +182,6 @@
           <li data-target="#carouselExampleSlidesOnly" data-slide-to="0" class="active"></li>
           <li data-target="#carouselExampleSlidesOnly" data-slide-to="1"></li>
           <li data-target="#carouselExampleSlidesOnly" data-slide-to="2"></li>
-          <li data-target="#carouselExampleSlidesOnly" data-slide-to="3"></li>
         </ol>
       </div>
     </div>
@@ -183,13 +189,13 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-6 verticalCenter">
-                    <h2>
+                    <h1 class="barlowCondensed">
                         La tecnología puede ayudar a mejorar las capacidades de lectura de tus estudiantes
-                    </h2>
-                    <p class="text-dark">
+                    </h1>
+                    <p class="text-dark sourceSansPro">
                         Conversa con uno de nuestros especialistas para llevar BeeReaders a tu colegio ahora mismo.
                     </p>
-                    <button class="btn my-4 colorBTNActive text-white rounded-pill px-4 py-2 sectionButton" type="submit"><a class="text-white" href="requestSpanish.html">PIDE UN DEMO</a></button>
+                    <button class="btn my-4 colorBTNActive text-white rounded-pill px-4 py-2 sectionButton" type="submit"><a class="text-white ubuntu" href="requestSpanish.html">PIDE UN DEMO</a></button>
                 </div>
                 <div id="fondo3Seccion3" class="col-sm-6"></div>
             </div>
@@ -198,47 +204,48 @@
     <div id="section7">
       <div class="container">
           <div class="row mb-4">
-                <div class="col-2"></div>
+                <div class="col-md-2"></div>
                 <div class="col text-center">
-                  <a class="text-dark text-decoration-none" href="#">Contactos<span class="sr-only">(current)</span></a>
+                  <a class="text-dark text-decoration-none sourceSansPro" href="#">Contactos<span class="sr-only">(current)</span></a>
                 </div>
                 <div class="col text-center">
-                  <a class="text-dark text-decoration-none" href="#">Blog<span class="sr-only">(current)</span></a>
+                  <a class="text-dark text-decoration-none sourceSansPro" href="#">Blog<span class="sr-only">(current)</span></a>
                 </div>
                 <div class="col text-center">
-                  <a class="text-dark text-decoration-none" href="#">Recursos<span class="sr-only">(current)</span></a>
+                  <a class="text-dark text-decoration-none sourceSansPro" href="#">Recursos<span class="sr-only">(current)</span></a>
                 </div>
                 <div class="col text-center">
-                  <a class="text-dark text-decoration-none" href="#">Politicas de privacidad<span class="sr-only">(current)</span></a>
+                  <a class="text-dark text-decoration-none sourceSansPro" href="#">Politicas de privacidad<span class="sr-only">(current)</span></a>
                 </div>
                 <div class="col text-center">
-                  <a class="text-dark text-decoration-none" href="#">Terminos de uso<span class="sr-only">(current)</span></a>
+                  <a class="text-dark text-decoration-none sourceSansPro" href="#">Terminos de uso<span class="sr-only">(current)</span></a>
                 </div>
-                <div class="col-2"></div>
+                </div>
+                <div class="col-md-2"></div>
           </div>
           <div class="row mb-4">
-             <div class="col-4"></div>
-             <div class="col text-center"><a class="text-dark" href="#"><i class="fab fa-facebook-f fa-2x iconSocial"></i></a></div>
-             <div class="col text-center"><a class="text-dark" href="#"><i class="fab fa-twitter fa-2x iconSocial"></i></a></div>
-             <div class="col text-center"><a class="text-dark" href="#"><i class="fab fa-instagram fa-2x iconSocial"></i></a></div>
-             <div class="col text-center"><a class="text-dark" href="#"><i class="fab fa-linkedin-in fa-2x iconSocial"></i></a></div>
-             <div class="col-4"></div>
+            <div class="col-md-4"></div>
+            <div class="col text-center"><a class="text-dark" href="#"><i class="fab fa-facebook-f fa-2x iconSocial"></i></a></div>
+            <div class="col text-center"><a class="text-dark" href="#"><i class="fab fa-twitter fa-2x iconSocial"></i></a></div>
+            <div class="col text-center"><a class="text-dark" href="#"><i class="fab fa-instagram fa-2x iconSocial"></i></a></div>
+            <div class="col text-center"><a class="text-dark" href="#"><i class="fab fa-linkedin-in fa-2x iconSocial"></i></a></div>
+            <div class="col-md-4"></div>
           </div>
           <div class="row">
-             <p class="text-dark text-center">
-                Bee Cave Road, Suite 200, Austin, T. - 78746 - USA | Armatambo 220, La molina, Lima | Perú | Morandé 835, Santiago, Región Metropolitana - Chile
-             </p>
+            <p class="text-dark text-center sourceSansPro m-auto">
+              Bee Cave Road, Suite 200, Austin, T. - 78746 - USA | Armatambo 220, La molina, Lima | Perú | Morandé 835, Santiago, Región Metropolitana - Chile
+            </p>
           </div>
       </div>
     </div>
     <footer class="my-4">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-3 verticalCenter">
+          <div class="col-sm-4 col-md-3 verticalCenter">
             <img class="imgFooter" src="./asset/img/logo.svg">
           </div>
           <div class="col"></div>
-          <div class="col-3 verticalCenter">
+          <div class="col-sm-4 col-md-3 verticalCenter">
             <img class="imgFooter" src="./asset/img/logoFooter.svg">
           </div>
         </div>

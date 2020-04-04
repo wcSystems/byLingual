@@ -1,137 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>By Lingual</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet" >
-    <link rel="stylesheet" href="./asset/css/style.css">
-</head>
-<body>
-  <header class="position-fixed">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light py-3 px-5">
-        <a class="navbar-brand" href="indexSpanish.html"><img width="200px" src="./asset/img/logo.svg" alt="logoPrincipal"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Recursos<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Contacto<span class="sr-only">(current)</span></a>
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>By Lingual</title>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet" >
+      <link rel="stylesheet" href="./asset/css/style.css">
+  </head>
+  <body>
+    <header class="fixed-top">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light py-3 px-sm-5 px-xs-2 text-center">
+          <a class="navbar-brand" href="indexSpanish.html"><img width="150px" src="./asset/img/logo.svg" alt="logoPrincipal"></a>
+           <i class="navbar-toggler fas fa-align-right border-0" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"></i>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto mb-2">
+              <li class="nav-item active mx-2 my-1">
+                <a class="text-secondary sourceSansPro" href="#">Recursos<span class="sr-only">(current)</span></a>
               </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Blog<span class="sr-only">(current)</span></a>
-              </li>
-          </ul>
-          <div class="my-2 my-lg-0">
-            <a class="text-dark text-decoration-none  border-right border-dark p-2" href="">REGISTRO</a>
-            <a class="text-dark text-decoration-none  border-right border-dark p-2" href="">INICIAR SESIÓN</a>
-            <a class="text-dark text-decoration-none" href="request.html">INGLES</a>
-            <button class="btn my-2 ml-3 my-sm-0 colorBTNActive text-white rounded-pill px-4 py-2" type="submit"><a class="text-white" href="requestSpanish.html">PIDE UN DEMO</a></button>
+              <li class="nav-item active mx-2 my-1">
+                  <a class="text-secondary sourceSansPro" href="#">Contactos<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active mx-2 my-1">
+                  <a class="text-secondary sourceSansPro" href="#">Blog<span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+            <div class="my-0 my-lg-0">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item verticalCenter ml-2 my-1">
+                  <a class="btnIngreso ubuntu mr-2" href="#">REGISTRO<span class="sr-only">(current)</span></a>
+                </li>
+
+                <li class="separador"></li>
+
+                <li class="nav-item verticalCenter ml-2 my-1">
+                    <a class="btnIngreso ubuntu mr-2" href="#">INICIAR SESIÓN<span class="sr-only">(current)</span></a>
+                </li>
+
+                <li class="separador"></li>
+
+                <li class="nav-item verticalCenter ml-2 my-1">
+                  <a class="ubuntu btnIngreso" href="request.html">INGLES<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item verticalCenter ml-2 my-2">
+                  <button class="btn colorBTNActive rounded-pill px-4 py-2 sectionButton m-auto" type="submit"><a class="text-white ubuntu" href="request.html">PEDIR UN DEMO</a></button>
+                </li>
+              </ul>
+              <div class="container-fluid termPrivacityMenuMobil">
+                <div class="col-6"><a class="text-secondary sourceSansPro" href="">Politicas de privacidad<span class="sr-only">(current)</span></a></div>
+                <div class="col-6"><a class="text-secondary sourceSansPro" href="">Terminos de uso<span class="sr-only">(current)</span></a></div>
+              </div>
+            </div>
           </div>
-        </div>
       </nav>
-    </header>
-    <div id="sectionRequest">
-      <div class="container">
-        <div class="formRequest">
-          <h1>
-            ¿Aun no te convences?
-          </h1>
-          <p class="text-dark">
-            Dejanos explicarte más cómo hemos ayudado a que decenas de miles <br /> de estudiantes mejoren su comprensión lectora.
-          </p>
-          <p class="text-dark">
-            Agenda una llamada con uno de nuestros asesores pedagógicos.
-          </p>
+  </header>
+      <div id="sectionRequest">
+        <div class="container">
+          <div class="formRequest">
+            <h1 class="barlowCondensed">
+              ¿Aun no te convences?
+            </h1>
+            <p class="text-dark sourceSansPro">
+              Dejanos explicarte más cómo hemos ayudado a que decenas de miles <br /> de estudiantes mejoren su comprensión lectora.
+            </p>
+            <p class="text-dark sourceSansPro">
+              Agenda una llamada con uno de nuestros asesores pedagógicos.
+            </p>
+          </div>
+          <form class="formRequest" action="" method="post">
+            <div class="form-group">
+              <label class="labelTextFormRequest sourceSansPro" for="email">EMAIL</label>
+              <input type="text" class="form-control sourceSansPro shadow p-3 mb-2 bg-white rounded-pill" id="email" placeholder="TEXTO">
+            </div>
+            <div class="form-group">
+              <label class="labelTextFormRequest sourceSansPro" for="name">NOMBRE</label>
+              <input type="text" class="form-control sourceSansPro shadow p-3 mb-2 bg-white rounded-pill" id="name" placeholder="TEXTO">
+            </div>
+            <div class="form-group">
+              <label class="labelTextFormRequest sourceSansPro" for="phone">NUMERO TELEFONICO</label>
+              <input type="text" class="form-control sourceSansPro shadow p-3 mb-2 bg-white rounded-pill" id="phone" placeholder="TEXTO">
+            </div>
+            <div class="form-group">
+              <label class="labelTextFormRequest sourceSansPro" for="city">CIUDAD</label>
+              <input type="text" class="form-control sourceSansPro shadow p-3 mb-2 bg-white rounded-pill" id="city" placeholder="TEXTO">
+            </div>
+            <div class="form-group">
+              <label class="labelTextFormRequest sourceSansPro" for="country">PAIS</label>
+              <input type="text" class="form-control sourceSansPro shadow p-3 mb-2 bg-white rounded-pill" id="country" placeholder="TEXTO">
+            </div>
+            <div class="form-group">
+              <label class="labelTextFormRequest sourceSansPro" for="education">CÓMO ESTÁN CONECTADOS A LA EDUCACIÓN?</label>
+              <select  class="form-control sourceSansPro shadow mb-2 bg-white rounded-pill selectIcon" id="education">
+                <option selected disabled value="0">SELECCIONAR</option>
+                <option value="1">Madre / Padre de familia / apoderada(o)</option>
+                <option value="2">Director de Tecnología</option>
+                <option value="3">Director de Currículum, Evaluación, Pedagógico, etc.</option>
+                <option value="4">Director(a) / Rector(a) de un colegio o escuela</option>
+                <option value="5">Profesor de Primaria / Educación Básica</option>
+                <option value="6">Profesor de Secundaria / Educación Media</option>
+                <option value="7">Profesor Universitario</option>
+                <option value="8">Coordinador de Tecnología en una escuela o colegio</option>
+                <option value="9">Coach, asesor pedagógico</option>
+                <option value="10">Encargado de bilbioteca escolar / CRA</option>
+                <option value="11">Universidad o Facultad de Educación</option>
+                <option value="12">Personal del Gobierno / Ministerio de Educación</option>
+                <option value="13">Proveedor / Distribuidor de productos de tecnología para educación</option>
+                <option value="14">Inversionista individual o grupal</option>
+                <option value="15">Organización no gubernamental</option>
+                <option value="16">Filantropía</option>
+              </select>
+              <i class="fas fa-chevron-down" id="icono"></i>
+            </div>
+            <button class="btn col-12 my-2 my-sm-0 colorBTNActive text-white rounded-pill px-4 py-2" type="submit">ENVIAR</button>
+          </form>
         </div>
-        <form class="formRequest" action="" method="post">
-          <div class="form-group">
-            <label class="labelTextFormRequest" for="email">EMAIL</label>
-            <input type="text" class="form-control shadow p-3 mb-2 bg-white rounded-pill" id="email" placeholder="TEXTO">
-          </div>
-          <div class="form-group">
-            <label class="labelTextFormRequest" for="name">NOMBRE</label>
-            <input type="text" class="form-control shadow p-3 mb-2 bg-white rounded-pill" id="name" placeholder="TEXTO">
-          </div>
-          <div class="form-group">
-            <label class="labelTextFormRequest" for="phone">NUMERO TELEFONICO</label>
-            <input type="text" class="form-control shadow p-3 mb-2 bg-white rounded-pill" id="phone" placeholder="TEXTO">
-          </div>
-          <div class="form-group">
-            <label class="labelTextFormRequest" for="city">CIUDAD</label>
-            <input type="text" class="form-control shadow p-3 mb-2 bg-white rounded-pill" id="city" placeholder="TEXTO">
-          </div>
-          <div class="form-group">
-            <label class="labelTextFormRequest" for="country">PAIS</label>
-            <input type="text" class="form-control shadow p-3 mb-2 bg-white rounded-pill" id="country" placeholder="TEXTO">
-          </div>
-          <div class="form-group">
-            <label class="labelTextFormRequest" for="education">CÓMO ESTÁN CONECTADOS A LA EDUCACIÓN?</label>
-            <select  class="form-control shadow mb-2 bg-white rounded-pill selectIcon" id="education">
-              <option selected value="1">SELECCIONAR</option>
-            </select>
-            <i class="fas fa-chevron-down"></i>
-          </div>
-          <button class="btn col-12 my-2 my-sm-0 colorBTNActive text-white rounded-pill px-4 py-2" type="submit">ENVIAR</button>
-        </form>
       </div>
-    </div>
-    <div id="section7">
-      <div class="container">
-          <div class="row mb-4">
-                <div class="col-2"></div>
-                <div class="col text-center">
-                  <a class="text-dark text-decoration-none" href="#">Contactos<span class="sr-only">(current)</span></a>
-                </div>
-                <div class="col text-center">
-                  <a class="text-dark text-decoration-none" href="#">Blog<span class="sr-only">(current)</span></a>
-                </div>
-                <div class="col text-center">
-                  <a class="text-dark text-decoration-none" href="#">Recursos<span class="sr-only">(current)</span></a>
-                </div>
-                <div class="col text-center">
-                  <a class="text-dark text-decoration-none" href="#">Politicas de privacidad<span class="sr-only">(current)</span></a>
-                </div>
-                <div class="col text-center">
-                  <a class="text-dark text-decoration-none" href="#">Terminos de uso<span class="sr-only">(current)</span></a>
-                </div>
-                <div class="col-2"></div>
-          </div>
-          <div class="row mb-4">
-             <div class="col-4"></div>
-             <div class="col text-center"><a class="text-dark" href="#"><i class="fab fa-facebook-f fa-2x iconSocial"></i></a></div>
-             <div class="col text-center"><a class="text-dark" href="#"><i class="fab fa-twitter fa-2x iconSocial"></i></a></div>
-             <div class="col text-center"><a class="text-dark" href="#"><i class="fab fa-instagram fa-2x iconSocial"></i></a></div>
-             <div class="col text-center"><a class="text-dark" href="#"><i class="fab fa-linkedin-in fa-2x iconSocial"></i></a></div>
-             <div class="col-4"></div>
-          </div>
-          <div class="row">
-             <p class="text-dark text-center">
+      <div id="section7">
+        <div class="container">
+            <div class="row mb-4">
+                  <div class="col-md-2"></div>
+                  <div class="col text-center">
+                    <a class="text-dark text-decoration-none sourceSansPro" href="#">Contactos<span class="sr-only">(current)</span></a>
+                  </div>
+                  <div class="col text-center">
+                    <a class="text-dark text-decoration-none sourceSansPro" href="#">Blog<span class="sr-only">(current)</span></a>
+                  </div>
+                  <div class="col text-center">
+                    <a class="text-dark text-decoration-none sourceSansPro" href="#">Recursos<span class="sr-only">(current)</span></a>
+                  </div>
+                  <div class="col text-center">
+                    <a class="text-dark text-decoration-none sourceSansPro" href="#">Politicas de privacidad<span class="sr-only">(current)</span></a>
+                  </div>
+                  <div class="col text-center">
+                    <a class="text-dark text-decoration-none sourceSansPro" href="#">Terminos de uso<span class="sr-only">(current)</span></a>
+                  </div>
+                  </div>
+                  <div class="col-md-2"></div>
+            </div>
+            <div class="row mb-4">
+              <div class="col-md-4"></div>
+              <div class="col text-center"><a class="text-dark" href="#"><i class="fab fa-facebook-f fa-2x iconSocial"></i></a></div>
+              <div class="col text-center"><a class="text-dark" href="#"><i class="fab fa-twitter fa-2x iconSocial"></i></a></div>
+              <div class="col text-center"><a class="text-dark" href="#"><i class="fab fa-instagram fa-2x iconSocial"></i></a></div>
+              <div class="col text-center"><a class="text-dark" href="#"><i class="fab fa-linkedin-in fa-2x iconSocial"></i></a></div>
+              <div class="col-md-4"></div>
+            </div>
+            <div class="row">
+              <p class="text-dark text-center sourceSansPro m-auto">
                 Bee Cave Road, Suite 200, Austin, T. - 78746 - USA | Armatambo 220, La molina, Lima | Perú | Morandé 835, Santiago, Región Metropolitana - Chile
-             </p>
-          </div>
-      </div>
-    </div>
-    <footer class="my-4">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-3 verticalCenter">
-            <img class="imgFooter" src="./asset/img/logo.svg">
-          </div>
-          <div class="col"></div>
-          <div class="col-3 verticalCenter">
-            <img class="imgFooter" src="./asset/img/logoFooter.svg">
-          </div>
+              </p>
+            </div>
         </div>
       </div>
-    </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script>
-</body>
-</html>
+      <footer class="my-4">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-4 col-md-3 verticalCenter">
+              <img class="imgFooter" src="./asset/img/logo.svg">
+            </div>
+            <div class="col"></div>
+            <div class="col-sm-4 col-md-3 verticalCenter">
+              <img class="imgFooter" src="./asset/img/logoFooter.svg">
+            </div>
+          </div>
+        </div>
+      </footer>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script>
+  </body>
+  </html>
