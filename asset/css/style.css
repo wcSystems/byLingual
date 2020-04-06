@@ -62,6 +62,10 @@ nav {
     margin-bottom: 100px;
 }
 
+.shadowHero {
+    text-shadow: 1px 1px 1px #707070;
+}
+
 #section1 {
     background-image: url('../img/fondoEnglish.svg');
     background-size: cover;
@@ -113,7 +117,7 @@ nav {
 }
 
 #section1 > div > h1 {
-    margin: 0px 100px;
+    margin: 200px 100px 0px 100px;
 }
 
 #section1Spanish > div > button {
@@ -156,14 +160,14 @@ nav {
 }
 
 #fondo1Seccion3 {
-    background-image: url('../img/fondo1Seccion3.svg');
+    background-image: url('../img/fondo1Seccion3.png');
     background-size: contain;
     background-repeat: no-repeat;
     height: 413px;
 }
 
 #fondo2Seccion3 {
-    background-image: url('../img/fondo2Seccion3.svg');
+    background-image: url('../img/fondo2Seccion3.png');
     background-size: contain;
     background-repeat: no-repeat;
     height: 413px;
@@ -177,10 +181,12 @@ nav {
 }
 
 .imgSlides {
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     margin: 30px auto;
     border-radius: 50%;
+    object-fit: cover;
+    object-position: 50% -40px;
 }
 
 .iconSocial:hover {
@@ -249,8 +255,6 @@ nav {
     }
     
     .imgSlides {
-        width: 200px;
-        height: 200px;
         margin: 30px auto;
     }
 
