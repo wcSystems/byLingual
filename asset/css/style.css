@@ -33,6 +33,7 @@ a:hover {
 .colorBTNActive {
     background-color: #FCB512;
     display: inline-block;
+    width: max-content;
 }
 
 .colorBTNActive:hover {
@@ -57,6 +58,7 @@ nav {
     border-radius: 20px;
 }
 
+
 #sectionRequest {
     padding-top: 150px;
     margin-bottom: 100px;
@@ -64,6 +66,7 @@ nav {
 
 .shadowHero {
     text-shadow: 1px 1px 1px #000000;
+    margin-top: 12rem;
 }
 
 #section1 {
@@ -116,10 +119,6 @@ nav {
     margin: 0px 100px;
 }
 
-#section1 > div > h1 {
-    margin: 200px 100px 0px 100px;
-}
-
 #section1Spanish > div > button {
     margin: 0px 100px;
 }
@@ -154,30 +153,31 @@ nav {
 
 #animacion {
     background-image: url('../img/animacion.gif');
-    background-size: contain;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
-    height: 413px;
+    height: 400px;
 }
 
 #fondo1Seccion3 {
     background-image: url('../img/fondo1Seccion3.png');
-    background-size: contain;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
-    height: 413px;
+    height: 400px;
 }
 
 #fondo2Seccion3 {
     background-image: url('../img/fondo2Seccion3.png');
-    background-size: contain;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
-    height: 413px;
+    border-radius: 20px;
+    height: 400px;
 }
 
 #fondo3Seccion3 {
     background-image: url('../img/fondo3Seccion3.svg');
-    background-size: contain;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
-    height: 413px;
+    height: 400px;
 }
 
 .imgSlides {
@@ -237,6 +237,10 @@ nav {
     font-size: 6rem;
     font-weight: 300;
     line-height: 1.2;
+}
+
+.btnSiMobil {
+    display: none;
 }
 
 
@@ -313,21 +317,40 @@ nav {
         text-align: center !important;
     }
 
-    #animacion {
-        height: 240px;
+    #animacion,
+    #fondo1Seccion3,
+    #fondo2Seccion3,
+    #fondo3Seccion3  {
+        height: 250px;
     }
-    
-    #fondo1Seccion3 {
-        height: 240px;
+
+    .barlowCondensedLight {
+        font-size: 20px;
+        margin-bottom: -20px;
     }
-    
-    #fondo2Seccion3 {
-        height: 240px;
+
+    .section7Link {
+        font-size: 12px;;
     }
-    
-    #fondo3Seccion3 {
-        height: 240px;
+
+    .reverseItems {
+        -ms-flex-direction: column !important;
+        flex-direction: column !important;
+        -ms-flex-direction: column-reverse !important;
+        flex-direction: column-reverse !important;
+    }
+
+    .btnNoMobil {
+        display: none;
+    }
+    .btnSiMobil {
+        display: block;
+    }
+
+    .section7LinkListMobil {
+        -ms-flex-direction: column !important;
+        flex-direction: column !important;
+        font-size: 20px;
     }
     
 }
-
