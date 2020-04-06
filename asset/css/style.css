@@ -25,7 +25,7 @@ a:hover {
 .barlowCondensedLight {
     font-family: 'Barlow Condensed', sans-serif;
     color: #4C4E56;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 200;
     margin-bottom: -25px;
 }
@@ -123,10 +123,6 @@ nav {
     margin: 0px 100px;
 }
 
-#section1Spanish > div > h1 {
-    margin: 0px 100px;
-}
-
 #section3 {
     background-color: #FEF5E5;
     padding: 100px 0px;
@@ -186,7 +182,7 @@ nav {
     margin: 30px auto;
     border-radius: 50%;
     object-fit: cover;
-    object-position: 50% -40px;
+    object-position: top;
 }
 
 .iconSocial:hover {
@@ -259,6 +255,8 @@ nav {
     }
     
     .imgSlides {
+        width: 200px;
+        height: 200px;
         margin: 30px auto;
     }
 
@@ -325,7 +323,6 @@ nav {
     }
 
     .barlowCondensedLight {
-        font-size: 20px;
         margin-bottom: -20px;
     }
 
