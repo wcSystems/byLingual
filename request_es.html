@@ -175,18 +175,18 @@
               obj.country = $('#country').val()
               obj.connectedToEdcation = $('#connectedToEdcation').val()
             $.ajax({
-                url: 'https://portal.beereaders.com',
+                url: 'http://localhost:8090/beereaders/mail/sendMail',
                 type : "POST",
                 data: JSON.stringify(obj),
                 dataType: "json",
                 contentType: "application/json;charset=utf-8",
                 success : function(res) {
                     console.log(res);
-                    toastr["success"]("PRUEBA", "test")
+                    toastr["success"]("Se ha enviado la información de contacto", "Mensaje")
                 },
                 error: function(res) {
                     console.log(res);
-                    toastr["error"]("PRUEBA", "test")
+                    toastr["error"]("Hubo un problema al enviar la información de contacto, por favor intente mas tarde", "Mensaje")
                 }
             })
           });
