@@ -351,3 +351,18 @@ nav {
     }
     
 }
+
+
+@media (max-width: 575px ) {
+
+    #section1 {
+        background-size: 300%;
+        background-position-x: -200px;
+    }
+
+    #section1Spanish {
+        background-size: 300%;
+        background-position-x: -400px;
+    }
+    
+}

@@ -59,30 +59,30 @@
             Schedule a call with one of our experts to learn more about how ByLingual helped thousands of K-12 Spanish-speaking students to read more and better. 
           </p>
         </div>
-        <form class="formRequest" action="" method="post">
+        <form class="formRequest" id="request" action="" method="post">
           <div class="form-group">
             <label class="labelTextFormRequest sourceSansPro" for="email">EMAIL</label>
-            <input type="text" class="form-control sourceSansPro shadow p-3 mb-2 bg-white rounded-pill" id="email" placeholder="TEXT">
+            <input type="text" class="form-control sourceSansPro shadow p-3 mb-2 bg-white rounded-pill" id="email" name="email" placeholder="TEXT">
           </div>
           <div class="form-group">
             <label class="labelTextFormRequest sourceSansPro" for="name">NAME</label>
-            <input type="text" class="form-control sourceSansPro shadow p-3 mb-2 bg-white rounded-pill" id="name" placeholder="TEXT">
+            <input type="text" class="form-control sourceSansPro shadow p-3 mb-2 bg-white rounded-pill" id="name" name="name" placeholder="TEXT">
           </div>
           <div class="form-group">
             <label class="labelTextFormRequest sourceSansPro" for="phone">PHONE NUMBER</label>
-            <input type="text" class="form-control sourceSansPro shadow p-3 mb-2 bg-white rounded-pill" id="phone" placeholder="TEXT">
+            <input type="text" class="form-control sourceSansPro shadow p-3 mb-2 bg-white rounded-pill" id="phoneNumber" name="phoneNumber" placeholder="TEXT">
           </div>
           <div class="form-group">
             <label class="labelTextFormRequest sourceSansPro" for="city">CITY</label>
-            <input type="text" class="form-control sourceSansPro shadow p-3 mb-2 bg-white rounded-pill" id="city" placeholder="TEXT">
+            <input type="text" class="form-control sourceSansPro shadow p-3 mb-2 bg-white rounded-pill" id="city" name="city" placeholder="TEXT">
           </div>
           <div class="form-group">
             <label class="labelTextFormRequest sourceSansPro" for="country">COUNTRY</label>
-            <input type="text" class="form-control sourceSansPro shadow p-3 mb-2 bg-white rounded-pill" id="country" placeholder="TEXT">
+            <input type="text" class="form-control sourceSansPro shadow p-3 mb-2 bg-white rounded-pill" id="country" name="country" placeholder="TEXT">
           </div>
           <div class="form-group">
             <label class="labelTextFormRequest sourceSansPro" for="education">HOW ARE CONNECTED TO EDUCATION?</label>
-            <select  class="form-control sourceSansPro shadow mb-2 bg-white rounded-pill selectIcon" id="education">
+            <select  class="form-control sourceSansPro shadow mb-2 bg-white rounded-pill selectIcon" id="connectedToEdcation" name="connectedToEdcation">
               <option selected disabled value="0">SELECT</option>
               <option value="1">Parent</option>
               <option value="2">District Superintendent, Deputy/Assitant Superintendent</option>
@@ -98,7 +98,7 @@
             </select>
             <i class="fas fa-chevron-down"></i>
           </div>
-          <button class="btn col-12 my-2 my-sm-0 colorBTNActive text-white rounded-pill px-4 py-2" type="submit">SEND</button>
+          <button class="btn col-12 my-2 my-sm-0 colorBTNActive text-white rounded-pill px-4 py-2" id="send" type="submit">SEND</button>
         </form>
       </div>
     </div>
@@ -154,5 +154,22 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script>
+    <script>
+       $("#send").on('click', function(e){
+        e.preventDefault();
+            $.ajax({
+                url: 'https://portal.beereaders.com',
+                type : "POST",
+                dataType : 'json',
+                data : $("#form").serialize(),
+                success : function(res) {
+                    console.log(res);
+                },
+                error: function(res) {
+                    console.log(res);
+                }
+            })
+        });
+    </script>
 </body>
 </html>
