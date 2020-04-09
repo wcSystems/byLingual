@@ -6,7 +6,8 @@
       <title>BeeReaders</title>
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
       <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet" >
-      <link rel="icon" type="png" href="./asset/img/favicon.png">
+      <link rel="icon" type="svg" href="./asset/img/ico.png">
+      <link  href="./asset/css/toastr.min.css" rel="stylesheet" />
       <link rel="stylesheet" href="./asset/css/style.css">
   </head>
   <body>
@@ -62,7 +63,7 @@
               Agenda una llamada con uno de nuestros asesores pedagógicos.
             </p>
           </div>
-          <form class="formRequest"  id="request" action="" method="post">
+          <form class="formRequest">
             <div class="form-group">
               <label class="labelTextFormRequest sourceSansPro" for="email">EMAIL</label>
               <input type="text" class="form-control sourceSansPro shadow p-3 mb-2 bg-white rounded-pill" id="email" name="email" placeholder="TEXTO">
@@ -162,22 +163,31 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script>
-      <script>
-          $("#send").on('click', function(e){
-           e.preventDefault();
-               $.ajax({
-                   url: 'https://portal.beereaders.com',
-                   type : "POST",
-                   dataType : 'json',
-                   data : $("#form").serialize(),
-                   success : function(res) {
-                       console.log(res);
-                   },
-                   error: function(res) {
-                       console.log(res);
-                   }
-               })
-           });
-       </script>
+      <script src="./asset/js/toastr.min.js"></script>
+      <script>        
+         $("#send").on('click', function(e){
+          e.preventDefault();
+            let obj = {}
+              obj.email = $('#email').val()
+              obj.name = $('#name').val()
+              obj.phoneNumber = $('#phoneNumber').val() 
+              obj.city = $('#city').val()
+              obj.country = $('#country').val()
+              obj.connectedToEdcation = $('#connectedToEdcation').val()
+            $.ajax({
+                url: 'https://portal.beereaders.com',
+                type : "POST",
+                data : obj,
+                success : function(res) {
+                    console.log(res);
+                    toastr["success"]("PRUEBA", "test")
+                },
+                error: function(res) {
+                    console.log(res);
+                    toastr["error"]("PRUEBA", "test")
+                }
+            })
+          });
+      </script>
   </body>
   </html>
