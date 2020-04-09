@@ -169,7 +169,7 @@
            $.ajax({
                url: 'https://portal.beereaders.com',
                type : "POST",
-               data : obj,
+               data: JSON.stringify(obj),
                dataType: "json",
                contentType: "application/json;charset=utf-8",
                success : function(res) {
