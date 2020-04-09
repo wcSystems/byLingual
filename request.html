@@ -60,7 +60,7 @@
             Schedule a call with one of our experts to learn more about how ByLingual helped thousands of K-12 Spanish-speaking students to read more and better. 
           </p>
         </div>
-        <form class="formRequest">
+        <form class="formRequest" onsubmit="return false;">
           <div class="form-group">
             <label class="labelTextFormRequest sourceSansPro" for="email">EMAIL</label>
             <input type="text" class="form-control sourceSansPro shadow p-3 mb-2 bg-white rounded-pill" id="email" name="email" placeholder="TEXT">
@@ -167,7 +167,7 @@
              obj.country = $('#country').val()
              obj.connectedToEdcation = $('#connectedToEdcation').val()
            $.ajax({
-               url: 'http://localhost:8090/beereaders/mail/sendMail',
+               url: 'https://portal.beereaders.com/beereaders/mail/sendMail',
                type : "POST",
                data: JSON.stringify(obj),
                dataType: "json",

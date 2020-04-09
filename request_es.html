@@ -63,7 +63,7 @@
               Agenda una llamada con uno de nuestros asesores pedagógicos.
             </p>
           </div>
-          <form class="formRequest">
+          <form class="formRequest" onsubmit="return false;">
             <div class="form-group">
               <label class="labelTextFormRequest sourceSansPro" for="email">EMAIL</label>
               <input type="text" class="form-control sourceSansPro shadow p-3 mb-2 bg-white rounded-pill" id="email" name="email" placeholder="TEXTO">
@@ -107,7 +107,7 @@
               </select>
               <i class="fas fa-chevron-down" id="icono"></i>
             </div>
-            <button class="btn col-12 my-2 my-sm-0 colorBTNActive text-white rounded-pill px-4 py-2" type="submit">ENVIAR</button>
+            <button class="btn col-12 my-2 my-sm-0 colorBTNActive text-white rounded-pill px-4 py-2" id="send" type="submit">ENVIAR</button>
           </form>
         </div>
       </div>
@@ -175,7 +175,7 @@
               obj.country = $('#country').val()
               obj.connectedToEdcation = $('#connectedToEdcation').val()
             $.ajax({
-                url: 'http://localhost:8090/beereaders/mail/sendMail',
+                url: 'https://portal.beereaders.com/beereaders/mail/sendMail',
                 type : "POST",
                 data: JSON.stringify(obj),
                 dataType: "json",
