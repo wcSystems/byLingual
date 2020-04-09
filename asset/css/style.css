@@ -70,14 +70,14 @@ nav {
 }
 
 #section1 {
-    background-image: url('../img/fondoEnglish.svg');
+    background-image: url('../img/fondoEnglish.png');
     background-size: cover;
     background-repeat: no-repeat;
     height: 800px;
 }
 
 #section1Spanish{
-    background-image: url('../img/fondoSpanish.svg');
+    background-image: url('../img/fondoSpanish.png');
     background-size: cover;
     background-repeat: no-repeat;
     height: 800px;
