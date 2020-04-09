@@ -178,6 +178,8 @@
                 url: 'https://portal.beereaders.com',
                 type : "POST",
                 data : obj,
+                dataType: "json",
+                contentType: "application/json;charset=utf-8",
                 success : function(res) {
                     console.log(res);
                     toastr["success"]("PRUEBA", "test")
