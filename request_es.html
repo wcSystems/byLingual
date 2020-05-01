@@ -74,26 +74,26 @@
           <form class="formRequest" onsubmit="return false;">
             <div class="form-group">
               <label class="labelTextFormRequest sourceSansPro" for="email">EMAIL</label>
-              <input type="text" class="form-control sourceSansPro shadow p-3 mb-2 bg-white rounded-pill" id="email" name="email" placeholder="TEXTO">
+              <input type="text" class="form-control sourceSansPro shadow p-3 mb-2 bg-white rounded-pill" id="email" name="email" placeholder="ejemplo@ejemplo.com" required>
             </div>
             <div class="form-group">
               <label class="labelTextFormRequest sourceSansPro" for="name">NOMBRE</label>
-              <input type="text" class="form-control sourceSansPro shadow p-3 mb-2 bg-white rounded-pill" id="name" name="name" placeholder="TEXTO">
+              <input type="text" class="form-control sourceSansPro shadow p-3 mb-2 bg-white rounded-pill" id="name" name="name" placeholder="Ingrese su Nombre" required>
             </div>
             <div class="form-group">
-              <label class="labelTextFormRequest sourceSansPro" for="phone">NUMERO TELEFONICO</label>
-              <input type="text" class="form-control sourceSansPro shadow p-3 mb-2 bg-white rounded-pill" id="phoneNumber" name="phoneNumber" placeholder="TEXTO">
+              <label class="labelTextFormRequest sourceSansPro" for="phone">NÚMERO TELEFÓNICO</label>
+              <input type="text" class="form-control sourceSansPro shadow p-3 mb-2 bg-white rounded-pill" id="phoneNumber" name="phoneNumber" placeholder="Tu número telefónico" required>
             </div>
             <div class="form-group">
               <label class="labelTextFormRequest sourceSansPro" for="city">CIUDAD</label>
-              <input type="text" class="form-control sourceSansPro shadow p-3 mb-2 bg-white rounded-pill" id="city" name="city" placeholder="TEXTO">
+              <input type="text" class="form-control sourceSansPro shadow p-3 mb-2 bg-white rounded-pill" id="city" name="city" placeholder="Tu ciudad" required>
             </div>
             <div class="form-group">
               <label class="labelTextFormRequest sourceSansPro" for="country">PAIS</label>
-              <input type="text" class="form-control sourceSansPro shadow p-3 mb-2 bg-white rounded-pill" id="country" name="country" placeholder="TEXTO">
+              <input type="text" class="form-control sourceSansPro shadow p-3 mb-2 bg-white rounded-pill" id="country" name="country" placeholder="Tu país de origen" required>
             </div>
             <div class="form-group">
-              <label class="labelTextFormRequest sourceSansPro" for="education">CÓMO ESTÁN CONECTADOS A LA EDUCACIÓN?</label>
+              <label class="labelTextFormRequest sourceSansPro" for="education">¿CÓMO ESTÁN CONECTADOS A LA EDUCACIÓN?</label>
               <select  class="form-control sourceSansPro shadow mb-2 bg-white rounded-pill selectIcon" id="connectedToEdcation" name="connectedToEdcation">
                 <option selected disabled value="0">SELECCIONAR</option>
                 <option value="1">Madre / Padre de familia / apoderada(o)</option>
@@ -177,12 +177,60 @@
           $("#loading").removeClass("displayFalse");
           e.preventDefault();
             let obj = {}
-              obj.email = $('#email').val()
-              obj.name = $('#name').val()
-              obj.phoneNumber = $('#phoneNumber').val() 
-              obj.city = $('#city').val()
-              obj.country = $('#country').val()
-              obj.connectedToEdcation = $('#connectedToEdcation').val()
+              obj.email = $('#email').val();
+              if(obj.email === ""){
+                $('#email').addClass('error');
+                $("#loading").addClass("displayFalse");
+                toastr["error"]("Requerimos su Email para continuar.", "Mensaje");
+                return;
+              }else{
+                $('#email').removeClass('error');
+              }
+              obj.name = $('#name').val();
+              if(obj.name === ""){
+                $('#name').addClass('error');
+                $("#loading").addClass("displayFalse");
+                toastr["error"]("Requerimos su Nombre Completo para continuar.", "Mensaje")
+                return;
+              }else{
+                $('#name').removeClass('error');
+              }
+              obj.phoneNumber = $('#phoneNumber').val(); 
+              if(obj.phoneNumber === ""){
+                $('#phoneNumber').addClass('error');
+                $("#loading").addClass("displayFalse");
+                toastr["error"]("Requerimos su número telefónico para continuar.", "Mensaje")
+                return;
+              }else{
+                $('#phoneNumber').removeClass('error');
+              }
+              obj.city = $('#city').val();
+              if(obj.city === ""){
+                $('#city').addClass('error');
+                $("#loading").addClass("displayFalse");
+                toastr["error"]("Requerimos la Ciudad de su procedencia para continuar", "Mensaje")
+                return;
+              }else{
+                $('#city').removeClass('error');
+              }
+              obj.country = $('#country').val();
+              if(obj.country === ""){
+                $('#country').addClass('error');
+                $("#loading").addClass("displayFalse");
+                toastr["error"]("Requerimos su País de origen para continuar", "Mensaje")
+                return;
+              }else{
+                $('#country').removeClass('error');
+              }
+              obj.connectedToEdcation = $('#connectedToEdcation').val();
+              if(!obj.connectedToEdcation){
+                $('#connectedToEdcation').addClass('error');
+                $("#loading").addClass("displayFalse");
+                toastr["error"]("¿A qué nivel está orientado?", "Mensaje");
+                return;
+              }else{
+                $('#connectedToEdcation').removeClass('error');
+              }
             $.ajax({
                 url: 'https://portal.beereaders.com/beereaders/mail/sendTestMail',
                 type : "POST",

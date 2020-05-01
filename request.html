@@ -71,23 +71,23 @@
         <form class="formRequest" onsubmit="return false;">
           <div class="form-group">
             <label class="labelTextFormRequest sourceSansPro" for="email">EMAIL</label>
-            <input type="text" class="form-control sourceSansPro shadow p-3 mb-2 bg-white rounded-pill" id="email" name="email" placeholder="TEXT">
+            <input type="text" class="form-control sourceSansPro shadow p-3 mb-2 bg-white rounded-pill" id="email" name="email" placeholder="example@example.com">
           </div>
           <div class="form-group">
             <label class="labelTextFormRequest sourceSansPro" for="name">NAME</label>
-            <input type="text" class="form-control sourceSansPro shadow p-3 mb-2 bg-white rounded-pill" id="name" name="name" placeholder="TEXT">
+            <input type="text" class="form-control sourceSansPro shadow p-3 mb-2 bg-white rounded-pill" id="name" name="name" placeholder="Yout name">
           </div>
           <div class="form-group">
             <label class="labelTextFormRequest sourceSansPro" for="phone">PHONE NUMBER</label>
-            <input type="text" class="form-control sourceSansPro shadow p-3 mb-2 bg-white rounded-pill" id="phoneNumber" name="phoneNumber" placeholder="TEXT">
+            <input type="text" class="form-control sourceSansPro shadow p-3 mb-2 bg-white rounded-pill" id="phoneNumber" name="phoneNumber" placeholder="Your phone number">
           </div>
           <div class="form-group">
             <label class="labelTextFormRequest sourceSansPro" for="city">CITY</label>
-            <input type="text" class="form-control sourceSansPro shadow p-3 mb-2 bg-white rounded-pill" id="city" name="city" placeholder="TEXT">
+            <input type="text" class="form-control sourceSansPro shadow p-3 mb-2 bg-white rounded-pill" id="city" name="city" placeholder="Your city">
           </div>
           <div class="form-group">
             <label class="labelTextFormRequest sourceSansPro" for="country">COUNTRY</label>
-            <input type="text" class="form-control sourceSansPro shadow p-3 mb-2 bg-white rounded-pill" id="country" name="country" placeholder="TEXT">
+            <input type="text" class="form-control sourceSansPro shadow p-3 mb-2 bg-white rounded-pill" id="country" name="country" placeholder="Your Country">
           </div>
           <div class="form-group">
             <label class="labelTextFormRequest sourceSansPro" for="education">HOW ARE CONNECTED TO EDUCATION?</label>
@@ -169,12 +169,60 @@
          $("#loading").removeClass("displayFalse");
          e.preventDefault();
            let obj = {}
-             obj.email = $('#email').val()
-             obj.name = $('#name').val()
-             obj.phoneNumber = $('#phoneNumber').val() 
-             obj.city = $('#city').val()
-             obj.country = $('#country').val()
-             obj.connectedToEdcation = $('#connectedToEdcation').val()
+           obj.email = $('#email').val();
+              if(obj.email === ""){
+                $('#email').addClass('error');
+                $("#loading").addClass("displayFalse");
+                toastr["error"]("We require your Email to continue.", "Message");
+                return;
+              }else{
+                $('#email').removeClass('error');
+              }
+              obj.name = $('#name').val();
+              if(obj.name === ""){
+                $('#name').addClass('error');
+                $("#loading").addClass("displayFalse");
+                toastr["error"]("We require your Full Name to continue.", "Message")
+                return;
+              }else{
+                $('#name').removeClass('error');
+              }
+              obj.phoneNumber = $('#phoneNumber').val(); 
+              if(obj.phoneNumber === ""){
+                $('#phoneNumber').addClass('error');
+                $("#loading").addClass("displayFalse");
+                toastr["error"]("We require your phone number to continue.", "Mensaje")
+                return;
+              }else{
+                $('#phoneNumber').removeClass('error');
+              }
+              obj.city = $('#city').val();
+              if(obj.city === ""){
+                $('#city').addClass('error');
+                $("#loading").addClass("displayFalse");
+                toastr["error"]("We require the City of origin to continue.", "Mensaje")
+                return;
+              }else{
+                $('#city').removeClass('error');
+              }
+              obj.country = $('#country').val();
+              if(obj.country === ""){
+                $('#country').addClass('error');
+                $("#loading").addClass("displayFalse");
+                toastr["error"]("We require your country of origin to continue.", "Mensaje")
+                return;
+              }else{
+                $('#country').removeClass('error');
+              }
+              obj.connectedToEdcation = $('#connectedToEdcation').val();
+              if(!obj.connectedToEdcation){
+                $('#connectedToEdcation').addClass('error');
+                $("#loading").addClass("displayFalse");
+                toastr["error"]("At what level is it oriented?", "Mensaje");
+                return;
+              }else{
+                $('#connectedToEdcation').removeClass('error');
+              }
            $.ajax({
               url: 'https://portal.beereaders.com/beereaders/mail/sendTestMail',
               type : "POST",
